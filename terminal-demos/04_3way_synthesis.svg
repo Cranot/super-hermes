@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480">
+  <defs>
+    <style>
+      .bg { fill: #1e1e2e; }
+      .bar { fill: #313244; }
+      .red { fill: #f38ba8; }
+      .yellow { fill: #f9e2af; }
+      .green { fill: #a6e3a1; }
+      .title { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 13px; }
+      .text { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .dim { fill: #6c7086; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .cyan { fill: #89dceb; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .green-text { fill: #a6e3a1; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .bold { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 12px; font-weight: bold; }
+      .yellow-text { fill: #f9e2af; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .purple { fill: #cba6f7; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .divider { fill: #45475a; }
+    </style>
+  </defs>
+  <rect class="bg" width="820" height="480" rx="10"/>
+  <rect class="bar" width="820" height="36" rx="10 10 0 0"/>
+  <circle class="red" cx="20" cy="18" r="6"/>
+  <circle class="yellow" cx="40" cy="18" r="6"/>
+  <circle class="green" cx="60" cy="18" r="6"/>
+  <text class="title" x="410" y="22" text-anchor="middle">Hermes Agent — /prism-3way synthesis (real output)</text>
+
+  <text class="purple" x="20" y="58">⚡ Loading skill: prism-3way</text>
+
+  <text class="cyan" x="20" y="86">Three conservation laws found independently:</text>
+
+  <text class="yellow-text" x="20" y="110">WHERE: Observability × Atomicity × Non-Blocking = K</text>
+  <text class="dim" x="20" y="128">(design surface: which properties can coexist)</text>
+
+  <text class="yellow-text" x="20" y="152">WHEN:  Lock_Hold_Time × Callback_Complexity = K</text>
+  <text class="dim" x="20" y="170">(operational: what breaks as context changes)</text>
+
+  <text class="yellow-text" x="20" y="194">WHY:   Consistency × Availability × Latency = K</text>
+  <text class="dim" x="20" y="212">(fundamental: geometry of the problem space)</text>
+
+  <rect class="divider" x="20" y="230" width="780" height="1"/>
+
+  <text class="green-text" x="20" y="254">SYNTHESIS: These are THREE EXPRESSIONS OF THE</text>
+  <text class="green-text" x="20" y="272">SAME UNDERLYING LAW in different vocabularies.</text>
+
+  <text class="text" x="20" y="300">WHERE identifies the constraint surface.</text>
+  <text class="text" x="20" y="318">WHEN traces how you slide along it.</text>
+  <text class="text" x="20" y="336">WHY proves you can't escape the surface.</text>
+
+  <rect class="divider" x="20" y="354" width="780" height="1"/>
+
+  <text class="bold" x="20" y="380">THE ONE INSIGHT ONLY 3-WAY INTEGRATION REVEALS:</text>
+
+  <text class="text" x="20" y="404">"The design is not broken — it's honestly</text>
+  <text class="text" x="20" y="420">constrained. The dead code, the listener blocking,</text>
+  <text class="text" x="20" y="436">the property mutations — they're not bugs.</text>
+  <text class="yellow-text" x="20" y="454">They're omens. A clearer design would name</text>
+  <text class="yellow-text" x="20" y="472">these signals explicitly."</text>
+</svg>

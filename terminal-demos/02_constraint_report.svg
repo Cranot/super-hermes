@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="480" viewBox="0 0 820 480">
+  <defs>
+    <style>
+      .bg { fill: #1e1e2e; }
+      .bar { fill: #313244; }
+      .red { fill: #f38ba8; }
+      .yellow { fill: #f9e2af; }
+      .green { fill: #a6e3a1; }
+      .title { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 13px; }
+      .text { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .dim { fill: #6c7086; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .cyan { fill: #89dceb; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .green-text { fill: #a6e3a1; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .red-text { fill: #f38ba8; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .bold { fill: #cdd6f4; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; font-weight: bold; }
+      .yellow-text { fill: #f9e2af; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+      .purple { fill: #cba6f7; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; font-size: 11.5px; }
+    </style>
+  </defs>
+  <rect class="bg" width="820" height="480" rx="10"/>
+  <rect class="bar" width="820" height="36" rx="10 10 0 0"/>
+  <circle class="red" cx="20" cy="18" r="6"/>
+  <circle class="yellow" cx="40" cy="18" r="6"/>
+  <circle class="green" cx="60" cy="18" r="6"/>
+  <text class="title" x="410" y="22" text-anchor="middle">Hermes Agent — /prism-reflect constraint report (real output)</text>
+
+  <text class="yellow-text" x="20" y="58">CONSTRAINT REPORT</text>
+  <text class="dim" x="20" y="74">═══════════════════════════════════════════════════════</text>
+
+  <text class="dim" x="20" y="98">This analysis used:</text>
+  <text class="text" x="220" y="98">Structural analysis via expert disagreement,</text>
+  <text class="text" x="220" y="114">proof-by-improvement, and conservation law derivation</text>
+
+  <text class="green-text" x="20" y="144">MAXIMIZED:</text>
+  <text class="text" x="20" y="164">  • Deep exposure of design choice (property-based state</text>
+  <text class="text" x="20" y="180">    reads trigger actions)</text>
+  <text class="text" x="20" y="196">  • Proof that "fixing" the race recreates problems</text>
+  <text class="text" x="20" y="212">    at a different level</text>
+  <text class="text" x="20" y="228">  • Concrete identification of dead code (_success_count)</text>
+
+  <text class="red-text" x="20" y="258">SACRIFICED:</text>
+  <text class="text" x="20" y="278">  • Comparison to alternative designs (event-driven,</text>
+  <text class="text" x="20" y="294">    callback-based, background-task recovery)</text>
+  <text class="text" x="20" y="310">  • Performance implications: lock contention during</text>
+  <text class="text" x="20" y="326">    high-frequency observation reads</text>
+  <text class="text" x="20" y="342">  • Singleton thread-safety (identified but not explored)</text>
+
+  <text class="cyan" x="20" y="372">RECOMMENDATIONS:</text>
+  <text class="text" x="20" y="392">  → /prism-scan "compare to event-based recovery models"</text>
+  <text class="text" x="20" y="408">  → /prism-scan "high-contention: 1000 threads observing"</text>
+  <text class="text" x="20" y="424">  → /prism-full for multi-system analysis</text>
+
+  <text class="yellow-text" x="20" y="454">CONSERVATION LAW OF THIS ANALYSIS:</text>
+  <text class="bold" x="20" y="472">Analytical_Depth × Claim_Generality = Constant</text>
+</svg>
